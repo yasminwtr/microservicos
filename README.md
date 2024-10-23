@@ -16,11 +16,18 @@ Certifique-se de que o Docker esteja instalado em sua máquina.
 
 2. Em seguida, suba os serviços separadamente
 
+- Para o serviço de notificação:
+```bash
+  cd notification-service
+  npm install
+  npm start
+```
+
 - Para o serviço de pagamento:
 ```bash
   cd payment-service
   npm install
-  node src/index.js
+  npm start
 ```
 
 ## Testando as Requisições
@@ -52,4 +59,5 @@ Após iniciar os serviços, você pode testar as requisições usando o Postman 
   }
   ```
 
-
+### Notificações:
+Assim que as requisições forem feitas será possível visualizar as notificações recebidas e enviadas via o próprio terminal.
